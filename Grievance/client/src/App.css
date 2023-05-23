@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(110, 109, 109); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(85, 85, 85); 
+}
+.home-background {
+  background-image: url('./images/background.png');
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.home-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.home-content h1 {
+  color: brown;
+  font-size: 50px;
+  text-align: center;
+  width: 90%;
+  margin: 30px auto;
+  font-weight: bold;
+}
+.home-content ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+.home-content ul li {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 20px;
+  margin: 20px;
+  transition: 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.home-content ul li:hover {
+  transform: scale(1.03);
+}
+.home-content ul li a {
+  text-decoration: none;
+}
+.home-content ul li img {
+  display: block;
+  margin: 0px auto;
+  width: 150px;
+  height: 150px;
+}
+.home-content ul li h2 {
+  color: brown;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 900px) {
+  .home-content h1 {
+    font-size: 35px;
+    width: 90%;
+    margin: 25px auto;
+  }
+  .home-content ul li {
+    padding: 15px 25px;
+    border-radius: 20px;
+    margin: 10px;
+    transition: 0.2s;
+  }
+  .home-content ul li img {
+    width: 150px;
+    height: 150px;
+  }
+  .home-content ul li h2 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .home-content h1 {
+    font-size: 30px;
+    width: 90%;
+    margin: 20px auto;
+  }
+  .home-content ul li {
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px;
+    transition: 0.2s;
+  }
+  .home-content ul li img {
+    width: 100px;
+    height: 100px;
+  }
+  .home-content ul li h2 {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .home-content h1 {
+    font-size: 30px;
+    width: 90%;
+    margin: 10px auto;
+  }
+  .home-content ul {
+    display: block;
+    width: 70%;
+  }
+  .home-content ul li {
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 10px;
+    transition: 0.2s;
+  }
+  .home-content ul li h2 {
+    font-size: 15px;
+  }
+}
+
+/* Login */
+.login-background {
+  background-image: url('./images/background.png');
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.login-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.login-content form {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.login-content form img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0px auto;
+}
+.login-content form h1 {
+  color: brown;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+.login-content form #group {
+  padding: 20px;
+}
+.login-content form #group label {
+  width: 100%;
+  color: brown;
+  font-weight: bold;
+}
+.login-content form #group input, .login-content form #group #date {
+  width: 100%;
+  padding: 5px 0px; 
+  font-size: 20px;
+  outline: none;
+  font-weight: bold;
+  border: none;
+  border-bottom: 1px solid grey;
+  transition: 0.5s;
+}
+.login-content form #group input:focus {
+  border-bottom: 1px solid brown;
+}
+.login-content form input[type=submit] {
+  outline: none;
+  border: none;
+  font-size: 15px;
+  background-color: brown;
+  width: 100%;
+  font-weight: bold;
+  color: white;
+  padding: 15px 5px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.login-content form input[type=submit]:hover {
+  background-color: rgb(122, 29, 29);
+}
+.error-msg {
+  width: 90%;
+  margin: -10px auto;
+  color: red;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  .login-content form {
+    width: 90%;
+    margin: 0px auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .login-content form h1 {
+    font-size: 20px;
+  }
+  .login-content form #group {
+    padding: 15px;
+  }
+  .login-content form #group input, .login-content form #group #date { 
+    font-size: 15px;
+  }
+  .login-content form input[type=submit] {
+    padding: 10px 5px;
+  }
+}
+
+/* Student Layout */
+
+.layout {
+  background: brown;
+  height: 80px;
+  width: 100%;
+}
+.layout label.logo {
+  color: white;
+  font-size: 35px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  line-height: 80px;
+  padding: 0px 100px;
+}
+.layout ul {
+  float: right;
+  margin-right: 20px;
+}
+.layout ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0px 5px;
+}
+.layout ul li a {
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+}
+.layout ul li button {
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.layout a:hover {
+  background-color: rgb(190, 69, 69);
+  transition: .5s;
+}
+.layout .checkbtn {
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+.layout #check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  .layout label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  .layout ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .layout .checkbtn {
+    display: block;
+  }
+  .layout ul {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    z-index: 10;
+    background: #2c3e50;
+    top: 80px;
+    right: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  .layout ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .layout ul li a {
+    color: white;
+    font-size: 20px;
+  }
+  .layout a:hover, .layout a.active, .layout button:hover {
+    background: none;
+    color: brown;
+  }
+  .layout #check:checked ~ ul {
+    right: -20px;
+  }
+}
+
+/* search query */
+.search-query {
+  width: 50%;
+  display: block;
+  margin: 20px auto;
+}
+.searchquery {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  font-weight: bold;
+  border: 1px solid grey;
+  transition: all 0.5 ease;
+}
+.search-query input[type='submit'] {
+  width: 50%;
+  display: block;
+  margin: 20px auto;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+.search-query input[type='submit']:hover {
+  background-color: rgb(6, 99, 6);
+}
+.student-name {
+  margin: 20px;
+  padding: 5px;
+  background-color: beige;
+  color: brown;
+}
+/* Home */
+.home-container .card-topic {
+  display: flex;
+  width: 70%;
+  margin: 10px auto;
+  background-color: rgb(255, 242, 242);
+  border-radius: 10px;
+}
+.card-topic h3 {
+  margin: 10px;
+  text-align: center;
+  color: brown;
+  width: 90%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.complaintRow {
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  border-radius: 5px;
+  outline: none;
+  border-bottom: 1px solid brown;
+}
+.flip-card:nth-child(even) {
+  background-color: rgb(247, 247, 247);
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 70%;
+  margin: 10px auto;
+  display: block;
+  min-height: 80px;
+  max-height: auto;
+  perspective: 1000px;
+  border-radius: 10px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front {
+  display: flex;
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  min-height: 100px;
+  max-height: auto;
+  margin: 10px auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Complaint */
+h3 {
+  margin: 20px;
+  text-align: center;
+  width: 90%;
+}
+.complaint-container form {
+  width: 90%;
+  margin: 10px auto;
+}
+.complaint-container form input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.complaint-container form input[type=file] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+.complaint-container form input[type=submit] {
+  background-color: brown;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.complaint-container form input[type=submit]:hover {
+  background-color: rgb(156, 50, 50);
+}
+
+/*Query Status Update*/
+.statusForm {
+  margin: 0px 10px;
+}
+.statusForm select {
+  padding: 2px;
+}
+.statusForm select:focus {
+  border: transparent;
+}
+.statusForm input {
+  outline: none;
+  font-size: 13px;
+  border: transparent;
+  background-color: green;
+  cursor: pointer;
+  color: white;
+  margin: 0px auto;
+  border-radius: 5px;
+  padding: 1px 5px;
+}
+
+/* Admin */
+.panel {
+  color: brown;
+  background-color: rgb(214, 214, 214);
+  text-align: center;
+  text-transform: uppercase;
+}
+.dept-topic {
+  width: 70%;
+  margin: 10px auto;
+  margin-top: 50px;
+  background-color: rgb(247, 247, 247);
+  border-radius: 10px;
+  padding: 5px 0px;
+  display: flex;
+}
+.dept-topic h3 {
+  color: orange;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
